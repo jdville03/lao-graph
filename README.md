@@ -13,7 +13,7 @@ For example, `/config/local.json`:
 ```
 {
   "network": "rinkeby",
-  "address": "0xAc665BE1E44cC4EeC388E34C3899C271FeE847F4"
+  "address": "0xeC43DfFaf01B6b03BAC5e2D93f8FE0D873b41Af8"
 }
 ```
 
@@ -29,6 +29,7 @@ yarn prepare:local && graph deploy --node https://api.thegraph.com/deploy/ --ipf
 # Rinkeby (develop):
 yarn prepare:rinkeby && graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ <SUBGRAPH_ACCOUNT>/<SUBGRAPH_NAME>
 ```
+
 Example subgraph account and name: `sophiacodes/the-lao-localhost`
 
 Any changes to `mapping.ts`, `schema.ts` or `schema.graphql` will require a rebuild, use `yarn build`. Then prepare and deploy using one of the above yarn commands.
